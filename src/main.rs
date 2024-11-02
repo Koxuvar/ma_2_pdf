@@ -1,11 +1,14 @@
 use shiva::core::TransformerTrait;
 
 fn main() {
-    let input_vec = std::fs::read("input.html").unwrap();
+    let xml_file = "/home/connor/Documents/coding/rust_projects/ma_2_pdf/testfile/Safe/testing.xml";
+    let pdf_file = "/home/connor/Documents/coding/rust_projects/ma_2_pdf/testfile/Safe/out.md";
+    
+    
+    let input_vec = std::fs::read(xml_file).unwrap();
     let input_bytes = bytes::Bytes::from(input_vec);
-    let document = shiva::html::Transformer::parse(&input_bytes).unwrap();
+    let document = shiva::xml::Transformer::parse(&input_bytes).unwrap();
     let output_bytes = shiva::markdown::Transformer::generate(&document).unwrap();
-    std::fs::write("out.md", output_bytes).unwrap();
+
+    std::fs::write(pdf_file, output_bytes).unwrap();
 }
-
-

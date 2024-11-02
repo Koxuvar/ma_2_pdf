@@ -1,0 +1,164 @@
+body, table, td, th, input, textarea {
+	color: black;
+	font-style: normal;
+	font-family: Arial, Helvetica, Verdana;
+	font-weight: normal;
+	font-size: 9pt;
+	text-transform: none;
+	font-variant: normal;
+	text-decoration: none;
+}
+
+body 
+{
+	background: #ffffff;
+}
+
+table
+{
+	border-collapse: collapse;
+	table-layout:auto;
+}
+
+tr
+{
+    border: 1px solid #666666;
+     padding: 2px 4px 2px 4px;
+}
+
+td
+{
+    border: 1px solid #666666;
+     padding: 2px 4px 2px 4px;
+}
+
+th
+{
+    border: 1px solid #666666;
+    text-align: center;
+    padding: 0px 4px 0px 4px;
+    color: Black;
+	background-color:#f0c311;
+	font-weight: normal;
+}
+
+tr.row1
+{
+    background-color: #d0d0d0;
+}
+
+tr.row2
+{
+    background-color: #f8f8f8;
+}
+
+td.colColspan
+{
+}
+
+td.colInt
+{
+    text-align: right;
+}
+
+td.colFloat
+{
+    text-align: right;
+}
+
+
+td.colString
+{
+    text-align: left;
+}
+
+td.colTime
+{
+    text-align: right;
+}
+
+td.colColor
+{
+    text-align: right;
+    font-family: monospace;
+    
+}
+
+
+td.colColor .spnColor
+{
+    border: 1px solid black;
+    padding: 0px 8px 0px 8px;
+    margin: 0px 4px 0px 4px;
+}
+th.button
+{
+   cursor:pointer;
+   background-color:black;
+   color:yellow;
+   padding: 0px 8px 0px 8px;
+   margin: 0px 4px 0px 4px;
+}
+
+.key
+{
+	font-weight: bold;
+}
+
+.value
+{
+}
+
+.fileinfo
+{
+	margin: 20px 20px 20px 20px;
+	padding: 5px 5px 5px 5px;
+	border: solid 1px gray;
+	color: gray;
+}
+
+.fileinfo ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.fileinfo ul li
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+
+
+#divAll
+{
+}
+
+#divBodyHeader
+{
+    border-bottom: solid 1px black;
+    text-align: right;
+    margin: 0px 0px 10px 0px;
+}
+
+#divBodyHeader.#imgLogo
+{
+    margin: 0px 0px 10px 0px;
+}
+
+#divBodyContent
+{
+}
+
+#divBodyFooter
+{
+	clear:both;
+    margin: 10px 0px 8px 0px;
+    border-top: solid 1px black;
+    font-size: 8pt;
+}
+
+
+
+
