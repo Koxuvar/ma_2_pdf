@@ -8,7 +8,7 @@ fn main() {
     let input_vec = std::fs::read(xml_file).unwrap();
     let input_bytes = bytes::Bytes::from(input_vec);
     let document = shiva::xml::Transformer::parse(&input_bytes).unwrap();
-    let output_bytes = shiva::markdown::Transformer::generate(&document).unwrap();
+    let output_bytes = shiva::html::Transformer::generate(&document).unwrap();
 
     std::fs::write(pdf_file, output_bytes).unwrap();
 }
